@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Products from './components/Products';
 import Message from './components/Message';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
+import Products from './components/Products';
+
 class App extends Component {
   render() {
     return (
@@ -15,10 +16,10 @@ class App extends Component {
               <Products />
               <Message />
               <Cart />
-              </div>
+            </div>
           </main>
-          <Footer />
-         </div>
+        </div>
+        <Footer />
       </div>
     );
   }

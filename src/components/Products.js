@@ -8,7 +8,7 @@ class Products extends Component {
             <section className="section">
                 <h1 className="section-heading">Danh Sách Sản Phẩm</h1>
                 <div className="row">
-                    {this.showProducts(products)}
+                    { this.showProducts(products)}
                 </div>
             </section>
 
@@ -28,7 +28,10 @@ class Products extends Component {
 
 const mapStateToProps = state => {
     return {
-        products: state.products
+        products : state.products
     }
 }
-export default connect(mapStateToProps, null)(Products);
+
+
+
+export default connect(mapStateToProps,null)(Products);
